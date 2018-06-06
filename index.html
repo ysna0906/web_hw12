@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>::ZARA::</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <!-- css -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> <!-- font awsome -->
+        <link rel="stylesheet" type="text/css" href="css/slick.css" /> <!-- slick -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/media.css" />
+        
+        <!-- js -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="js/slick.js"></script>
+        <script type="text/javascript">
+            $(document).on('ready', function() {
+                // slider
+                $(".lazy").slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    lazyLoad: 'ondemand', // ondemand progressive anticipated
+                    infinite: true,
+                    arrows: false,
+                    dots: true
+                });
+                
+                // tabs
+                $('.tabs .tab-links a').on('click', function(e) {
+                    var currentAttrValue = $(this).attr('href');
+                    // Show/Hide Tabs
+                    $('.tabs ' + currentAttrValue).show().siblings().hide();
+                    // Change/remove current tab to active
+                    $(this).parent('li').addClass('active').siblings().removeClass('active');
+                    e.preventDefault();
+                });
+            });
+            
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="inner">
+                <!-- header start -->
+                <header>
+                    <h1>
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo" />
+                        </a>
+                    </h1>
+
+                    <ul class="gnb cf">
+                        <li>
+                            <a href="#">LOGIN</a>
+                        </li>
+                        <li>
+                            <a href="#">JOIN</a>
+                        </li>
+                        <li>
+                            <a href="#">CART</a>
+                        </li>
+                        <li>
+                            <a href="#">MYPAGE</a>
+                        </li>
+                        <li>
+                            <a href="#">ORDER</a>
+                        </li>
+                    </ul>
+                    
+                    <span onclick="openNav()">&#9776;</span>
+                                        
+                    <ul id="mySidenav" class="mobile_gnb sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <li>
+                            <a href="#">Outer</a>
+                        </li>
+                        <li>
+                            <a href="#">Top</a>
+                        </li>
+                        <li>
+                            <a href="#">Bottom</a>
+                        </li>
+                        <li>
+                            <a href="#">Dress</a>
+                        </li>
+                        <li>
+                            <a href="#">Shoes</a>
+                        </li>
+                        <li>
+                            <a href="#">Acc</a>
+                        </li>
+                        <li>
+                            <a href="#">Sale</a>
+                        </li>
+                        <li>
+                            <a href="#">2018 S/S</a>
+                        </li>
+                    </ul>
+                                        
+                    <ul class="utill">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </header>
+                <!-- header end -->
+
+                <!-- mainSlider start -->
+                <div class="mainSlider">
+                    <div class="lazy slider" data-sizes="50vw">
+                        <div>
+                            <a href="#">
+                                <img src="images/main1.jpg" alt="1">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="images/main2.jpg" alt="2">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="images/main3.jpg" alt="3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- mainSlider end -->
+
+                <!-- container start -->
+                <div class="container">
+                    
+                    <div class="mobile_bg"></div>
+                    
+                    <div class="tabs">
+                        <ul class="tab-links">
+                            <li class="active"><a href="#tab1">All</a></li>
+                            <li><a href="#tab2">Outer</a></li>
+                            <li><a href="#tab3">Top</a></li>
+                            <li><a href="#tab4">Bottom</a></li>
+                            <li><a href="#tab5">Dress</a></li>
+                            <li><a href="#tab6">Shoes</a></li>
+                            <li><a href="#tab7">Acc</a></li>
+                        </ul>
+                        
+                        <div class="tab-content">
+                            <div id="tab1" class="tab active">
+                                <ul class="top">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer1.jpg" alt="outer1" />
+                                            <div class="cover">
+                                                <h2>ZARA outer</h2>
+                                                <div class="line"></div>
+                                                <h5>Tags :</h5>
+                                                <p>
+                                                    <span>#outer</span>
+                                                    <span>#trench coat</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer2.jpg" alt="outer2" />
+                                            <div class="cover">
+                                                <h2>ZARA dress</h2>
+                                                <div class="line"></div>
+                                                <h5>Tags :</h5>
+                                                <p>
+                                                    <span>#dress</span>
+                                                    <span>#one piece</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer3.jpg" alt="outer3" />
+                                            <div class="cover">
+                                                <h2>ZARA one piece</h2>
+                                                <div class="line"></div>
+                                                <h5>Tags :</h5>
+                                                <p>
+                                                    <span>#one piece</span>
+                                                    <span>#denim</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer4.jpg" alt="outer4" />
+                                            <div class="cover">
+                                                <h2>ZARA shoes</h2>
+                                                <div class="line"></div>
+                                                <h5>Tags :</h5>
+                                                <p>
+                                                    <span>#shoes</span>
+                                                    <span>#leather shoes</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="bottom">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/sale.jpg" alt="" />
+                                            <div class="cover">
+                                                <h2>SALE</h2>
+                                                <div class="line"></div>
+                                                <h5>Tags :</h5>
+                                                <p>
+                                                    <span>#sale</span>
+                                                    <span>#all category</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/new1.jpg" alt="" />
+                                            <div class="cover">
+                                                <h2>NEW arrival</h2>
+                                                <div class="line"></div>
+                                                <h5>Tags :</h5>
+                                                <p>
+                                                    <span>#new</span>
+                                                    <span>#trend</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab2" class="tab">
+                                <ul class="top">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer1.jpg" alt="outer1" />
+                                            <div class="cover">
+                                                <h2>ZARA outer</h2>
+                                                <div class="line"></div>
+                                                <h5>Tags :</h5>
+                                                <p>
+                                                    <span>#outer</span>
+                                                    <span>#trench coat</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer2.jpg" alt="outer2" />
+                                            <div class="cover">
+                                                <h2>ZARA dress</h2>
+                                                <div class="line"></div>
+                                                <h5>Tags :</h5>
+                                                <p>
+                                                    <span>#dress</span>
+                                                    <span>#one piece</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer3.jpg" alt="outer3" />
+                                            <div class="cover">
+                                                <h2>ZARA one piece</h2>
+                                                <div class="line"></div>
+                                                <h5>Tags :</h5>
+                                                <p>
+                                                    <span>#one piece</span>
+                                                    <span>#denim</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer4.jpg" alt="outer4" />
+                                            <div class="cover">
+                                                <h2>ZARA shoes</h2>
+                                                <div class="line"></div>
+                                                <h5>Tags :</h5>
+                                                <p>
+                                                    <span>#shoes</span>
+                                                    <span>#leather shoes</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="bottom">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/sale.jpg" alt="" />
+                                            <div class="cover">
+                                                <h2>SALE</h2>
+                                                <div class="line"></div>
+                                                <h5>Tags :</h5>
+                                                <p>
+                                                    <span>#sale</span>
+                                                    <span>#all category</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/new1.jpg" alt="" />
+                                            <div class="cover">
+                                                <h2>NEW arrival</h2>
+                                                <div class="line"></div>
+                                                <h5>Tags :</h5>
+                                                <p>
+                                                    <span>#new</span>
+                                                    <span>#trend</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab3" class="tab">
+                                <ul class="top">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/top1.jpg" alt="top1" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/top2.jpg" alt="top2" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/top3.jpg" alt="top3" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/top4.jpg" alt="top4" />
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="bottom">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/top5.jpg" alt="top5" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/top6.jpg" alt="top6" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab4" class="tab">
+                                <ul class="top">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/bottom1.jpg" alt="bottom1" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/bottom2.jpg" alt="bottom2" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/bottom3.jpg" alt="bottom3" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/bottom4.jpg" alt="bottom4" />
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="bottom">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/bottom5.jpg" alt="bottom5" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/bottom6.jpg" alt="bottom6" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab5" class="tab">
+                                <ul class="top">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer1.jpg" alt="outer1" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer2.jpg" alt="outer2" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer3.jpg" alt="outer3" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer4.jpg" alt="outer4" />
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="bottom">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/sale.jpg" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/new1.jpg" alt="" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab6" class="tab">
+                                <ul class="top">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer1.jpg" alt="outer1" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer2.jpg" alt="outer2" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer3.jpg" alt="outer3" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer4.jpg" alt="outer4" />
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="bottom">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/sale.jpg" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/new1.jpg" alt="" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab7" class="tab">
+                                <ul class="top">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer1.jpg" alt="outer1" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer2.jpg" alt="outer2" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer3.jpg" alt="outer3" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/outer4.jpg" alt="outer4" />
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="bottom">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/sale.jpg" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/new1.jpg" alt="" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- container end -->
+
+                <!-- footer start -->
+                <footer>
+                    <h2>JOIN OUR NESWLETTER</h2>
+                    <form action="#" method="post">
+                        <input type="text" placeholder="ENTER YOUR EMAIL" />
+                    </form>
+                    <div class="sns">
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/zara/">INSTAGRAM</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/Zara/">FACEBOOK</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/zara">TWITTER</a>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.co.kr/zaraofficial/">PINTEREST</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/zara">YOUTUBE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+                <!-- footer end -->
+            </div>
+        </div>
+        
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </body>
+</html>

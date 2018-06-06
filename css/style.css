@@ -1,0 +1,381 @@
+@charset "utf-8";
+/***********************
+        default
+************************/
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#wrap {
+    width: 100%;
+}
+
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/***********************
+        header
+************************/
+header {
+    padding: 40px 0;
+}
+
+header h1 {
+    display: inline-block;
+    width: 150px;    
+    margin-right: 630px;
+}
+
+header h1 img {
+    width: 100%;
+}
+
+
+
+/***** gnb *****/
+
+.gnb {
+    display: inline-block;
+    border: 3px solid black;
+    padding: 5px;
+    
+    text-align: center;
+    font-size: 0;
+}
+.gnb li {
+    display: inline-block;
+    width: 70px;
+}
+.gnb li a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/***** mobile_gnb *****/
+.mobile_gnb {
+    position: absolute;
+    top: 150px;
+    left: 3%;
+}
+
+.mobile_gnb li {
+    margin-bottom: 20px;
+}
+
+.mobile_gnb li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+header span {
+    display: none;
+}
+
+
+/***** utill *****/
+.utill {
+    display: inline-block;
+    font-size: 0;
+    text-align: center;
+}
+.utill li {
+    display: inline-block;
+    width: 30px;
+    margin-left: 10px;
+}
+.utill li a {}
+
+.utill li a i {
+    font-size: 20px;
+}
+
+
+/***********************
+        mainSlider
+************************/
+
+.slider div {
+    height: 600px;
+}
+
+.slider div img {
+    width: 100%;
+}
+
+
+
+/***** dots *****/
+.slick-dots {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -30px;
+    text-align: center;
+}
+
+
+ul.slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    vertical-align: top;
+}
+
+ul.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 0;
+    vertical-align: top;
+    
+    background: none;
+    
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+ul.slick-dots li.slick-active {
+    background: #fff;
+    border-radius: 50%;
+}
+
+
+
+
+
+/***********************
+        container
+************************/
+.container {
+    margin-top: 100px;
+}
+
+.mobile_bg {
+    display: none;
+    width: 100%;
+    height: 798px;
+    background: url(../images/mm_main.jpg) no-repeat;
+    background-size: 100%;
+}
+
+
+/***** Tabs *****/
+.tabs {
+    display: inline-block;
+    width: 100%;
+}
+/*----- Tab Links -----*/
+.tab-links {
+    width: 560px;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.tab-links:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.tab-links li {
+    float: left;
+    width: 80px;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+}
+.tab-links li:last-child {
+    border-right: 0;
+}
+
+.tab-links a {
+    display: block;
+    
+    color: #ccc;
+    font-size: 13px;
+    font-weight: 600;
+    
+    transition: all linear 0.15s;
+}
+
+li.active a, li.active a:hover {
+    color: #000;
+}
+/*----- Content of Tabs -----*/
+.tab {
+    display: none;
+    margin-bottom: 100px;
+}
+.tab.active {
+    display: block;
+}
+
+
+
+/***** tab content *****/
+/*** top ***/
+.top {
+    margin-bottom: 40px;
+    font-size: 0;
+}
+.top li {
+    display: inline-block;
+    width: calc(25% - 30px);
+    position: relative;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.top li:last-child {
+    margin-right: 0;
+}
+
+.top li a {
+    display: block;
+}
+.top li img {
+    width: 100%;
+}
+
+
+/*** bottom ***/
+.bottom {
+    font-size: 0;
+}
+
+.bottom li {
+    display: inline-block;
+    width: calc(50% - 20px);
+    position: relative;
+    margin-right: 40px;
+    vertical-align: top;
+    overflow: hidden;
+}
+.bottom li:last-child {
+    margin-right: 0;
+}
+
+.bottom li a {
+    display: block;
+}
+.bottom li img {
+    width: 100%;
+}
+
+
+.top li:hover .cover, .bottom li:hover .cover {
+    display: block;
+}
+
+
+/***** cover *****/
+.cover {
+    display: none;
+    width: 100%;
+    height: 100%;    
+    padding: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    
+    background: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    color: gray;
+}
+
+.cover h2 {
+    font-size: 20px;
+}
+
+.cover .line {
+    width: 80%;
+    height: 2px;
+    margin: 20px 0;
+    background: gray;
+}
+
+.cover h5 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cover p span {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+/***********************
+        footer
+************************/
+footer {
+    text-align: center;
+}
+
+/***** form *****/
+footer form {
+    margin: 50px 0;
+}
+
+footer form input {
+    width: 500px;
+    height: 35px;
+    border: 0;
+    border-bottom: 2px solid gray;
+    text-align: center;
+}
+
+
+/***** sns *****/
+.sns ul {
+    padding-bottom: 100px;
+}
+.sns ul li {
+    display: inline-block;
+    width: 100px;
+}
+.sns ul li a {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+}

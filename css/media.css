@@ -1,0 +1,284 @@
+@media screen and (max-width: 768px) {
+    /************************
+            default
+    *************************/
+    .inner {
+        width: 100%;
+    }
+    
+    /************************
+            header
+    *************************/
+    header {
+        padding: 0;
+    }
+    
+    header h1 {
+        position: absolute;
+        top: 50px;
+        left: 3%;
+    }
+    
+    .gnb {
+        display: none;
+    }
+    
+    .utill {
+        position: absolute;
+        top: 50px;
+        right: 3%;
+    }
+    
+    /************************
+            mainSlider
+    *************************/
+    .mainSlider {
+        display: none;
+    }
+    
+    
+    /************************
+            container
+    *************************/
+    .container {
+        margin-top: 0;
+    }
+    
+    .mobile_bg {
+        display: block;
+        margin-bottom: 50px;
+    }
+    
+    /***** tab content *****/
+    /*** top ***/
+    .top {
+        margin-bottom: 0;
+        font-size: 0;
+    }
+    .top li {
+        width: calc(50% - 10px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .top li:nth-child(2) {
+        margin-right: 0;
+    }
+
+
+    /*** bottom ***/
+    .bottom li {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bottom li a {
+        display: block;
+    }
+    .bottom li img {
+        width: 100%;
+    }
+
+    
+    
+    /***** cover *****/
+    .cover {
+        display: block;
+        height: 40%;    
+        
+        position: absolute;
+        top: 50%;
+    }
+
+    .bottom .cover {
+        height: 50%;
+    }
+
+    
+}
+
+@media screen and (max-width: 320px) {
+    /************************
+            header
+    *************************/
+    header {
+        padding: 50px 0;
+    }
+    
+    header h1 {
+        width: 100px;
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        margin-left: -50px;
+    }
+    
+    .mobile_bg {
+        height: 350px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        
+        background-size: contain;
+        background-position: center;
+    }
+    
+    /***** side nav *****/
+    header span {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        
+        font-size:30px;
+        cursor:pointer;
+    }
+    
+    .sidenav {
+        width: 0;
+        height: 100%;
+        padding-top: 60px;
+        
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .sidenav li {
+        padding-left: 20px;
+    }
+
+    .sidenav a {
+        display: block;
+        font-size: 25px;
+        color: #818181;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    
+    
+    .utill {
+        position: absolute;
+        top: 42px;
+        right: 10px;
+    }
+    
+    .utill li:nth-child(2) {
+        display: none;
+    }
+    .utill li:nth-child(3) {
+        display: none;
+    }
+    
+    
+    /************************
+            container
+    *************************/
+    
+    
+    .tab-links {
+        width: 200px;
+        border: 3px solid black;
+        padding: 5px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    .tab-links li {
+        width: 100px;
+        height: 40px;
+        border:0;
+        line-height: 40px;
+    }
+    
+    
+    
+    /***** tab content *****/
+    /*** top ***/
+    .top {
+        margin-bottom: 0;
+        font-size: 0;
+    }
+    .top li {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+        margin-bottom: 20px;
+    }
+    
+    
+    /*** bottom ***/
+    .bottom li {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+    
+    
+    /***** cover *****/
+    .cover {
+        display: block;
+        height: 45%;    
+        padding: 15px;        
+        
+        position: absolute;
+        top: 50%;
+    }
+
+    .bottom .cover {
+        height: 50%;
+        text-align: center;
+    }
+        
+    .bottom .cover .line {
+        display: none;
+    }
+
+    .bottom .cover h5 {
+        display: none;
+    }
+
+    .bottom .cover p span {
+        display: none;
+    }
+    
+    
+    
+    
+    /************************
+            footer
+    *************************/
+    
+    footer h2 {
+        font-size: 17px;
+    }
+    
+    footer form input {
+        width: 80%;
+    }
+    
+    footer .sns li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    footer .sns li a {
+        font-size: 16px;
+    }
+    
+}
